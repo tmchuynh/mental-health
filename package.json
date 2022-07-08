@@ -1,6 +1,8 @@
 {
   "dependencies": {
     "bulma": "^0.9.4",
-    "bulma-graphs": "^0.2.1"
+    "bulma-graphs": "^0.2.1",
+    "chart.js": "^3.8.0",
+    "vue-bulma-chartjs": "^1.0.5"
   }
 }
