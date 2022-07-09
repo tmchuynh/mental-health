@@ -20,87 +20,73 @@ $sidebar-width: 13rem
 $header-height: 3.25rem
 $padding: 2rem
 
-
-$timeline-marker-background-color	$white
-$timeline-marker-border	.1em solid $grey-light
-$timeline-line	.1rem solid $grey-light
-$timeline-content-padding	1em 0 0 2em
-$timeline-icon-size	$size-5
-$timeline-header-width	4em
-$dimensions	16 24 32 48 64 96 128
-
-html {
+html
   overflow-y: auto
-}
 
-body {
+body
   color: $font-color
-}
 
-.sidebar {
-  padding-left: calc(#{$padding} - 0.75rem)
-  padding-right: calc(#{$padding} - 0.75rem)
+.sidebar
+  padding-left: calc($padding - 0.75rem)
+  padding-right: calc($padding - 0.75rem)
   position: absolute
 
-  .category-header {
+  .category-header
     padding: 0.5em 0.75em
-  }
+  
 
-  .menu {
+  .menu
     position: fixed
-    width: calc(#{$sidebar-width} - 2.5rem)
+    width: calc($sidebar-width - 2.5rem)
     max-width: inherit
-  }
+  
 
-  .menu-list a {
+  .menu-list a
     font-size: 0.875rem
     line-height: 24px
     color: $font-dark-color
-  }
-}
+  
 
-.sidebar:before {
+
+.sidebar:before
   content: ""
   background-color: $dark-color
   width: $sidebar-width
   position: fixed
-}
+
 
 .sidebar,
-.sidebar:before {
+.sidebar:before
   top: 0
   bottom: 0
   left: 0
-}
 
-.main {
+
+.main
   margin-left: $sidebar-width
   position: relative
   padding-left: $padding
   padding-right: $padding
 
-  header {
+  header
     line-height: 18px
 
-    h2 {
+    h2
       font-size: 24px
       font-weight: 600
       padding-bottom: 0.5rem
-    }
+    
 
-    hr {
+    hr
       background-color: transparent
       border-top: 1px solid $lighter-color
-    }
+    
 
-    small {
+    small
       color: $font-dark-color
       text-align: right
-    }
-  }
-}
-
-.main:before {
+    
+.main:before
   content: ""
   position: fixed
   top: 0
@@ -108,88 +94,76 @@ body {
   z-index: -2
   left: 0
   right: 0
-  background-image: -webkit-radial-gradient(top,
-      circle cover,
-      $gradient-color-start 0%,
-      $gradient-color-end 70%)
-  background-image: -moz-radial-gradient(center,
-      circle cover,
-      $gradient-color-start 0%,
-      $gradient-color-end 70%)
-  background-image: -o-radial-gradient(center,
-      circle cover,
-      $gradient-color-start 0%,
-      $gradient-color-end 70%)
-  background-image: radial-gradient(center,
-      circle cover,
-      $gradient-color-start 0%,
-      $gradient-color-end 70%)
+  background-image: -webkit-radial-gradient(top, circle cover, $gradient-color-start 0%, $gradient-color-end 70%)
+  background-image: -moz-radial-gradient(center, circle cover, $gradient-color-start 0%, $gradient-color-end 70%)
+  background-image: -o-radial-gradient(center, circle cover, $gradient-color-start 0%, $gradient-color-end 70%)
+  background-image: radial-gradient(center, circle cover, $gradient-color-start 0%, $gradient-color-end 70%)
   background-position: 50%, 50%
-}
+
 
 .sidebar,
-.main {
+.main
   margin-top: $header-height
   padding-top: $padding
-}
 
-.navbar {
+
+.navbar
   box-shadow: 0px 0px 21px $darker-color
-}
 
-.navbar-brand {
+
+.navbar-brand
   width: $sidebar-width
   background-color: $highlight-color
-  margin-right: calc(#{$padding} - 0.75rem)
+  margin-right: calc($padding - 0.75rem)
 
-  .navbar-item {
+  .navbar-item
     padding-left: $padding
-  }
-}
+  
 
-.box {
-  hr {
+
+.box
+  hr
     background-color: $lighter-color
-  }
-}
+  
 
-.box.transparent {
+
+.box.transparent
   background-color: transparent
-}
 
-.box.accent {
+
+.box.accent
   background-color: $highlight-color
 
-  .subtitle {
+  .subtitle
     color: $main-color
-  }
-}
+  
 
-.statcard {
+
+.statcard
   font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif
   text-align: center
 
-  .statcard-number {
+  .statcard-number
     font-size: 2rem
     font-weight: 300
     line-height: 1.125
-  }
+  
 
-  .statcard-desc {
+  .statcard-desc
     font-size: 85%
     letter-spacing: 0.15em
     text-transform: uppercase
     color: $font-dark-color
-  }
+  
 
-  .delta-indicator {
+  .delta-indicator
     display: inline-block
     padding: .4em
     font-size: 12px
     vertical-align: middle
-  }
+  
 
-  .delta-indicator:after {
+  .delta-indicator:after
     content: ""
     display: inline-block
     width: 0
@@ -199,17 +173,17 @@ body {
     vertical-align: middle
     border-right: 4px solid transparent
     border-left: 4px solid transparent
-  }
+  
 
-}
+
 
 /* overwrite bulma, try to resolve with variables */
 
-.box {
+.box
   background-color: $lighter-color
   box-shadow: none
   border-radius: 3px
-}
+
 
 .content h1,
 .content h2,
@@ -218,70 +192,74 @@ body {
 .content h5,
 .content h6,
 .title,
-.tile {
+.tile
   color: $font-color
-}
 
-.subtitle {
+
+.subtitle
   color: $font-dark-color
-}
 
-.navbar-item.is-tab:hover {
+
+.navbar-item.is-tab:hover
   background-color: transparent
   border-bottom-color: $font-dark-color
-}
 
-.navbar-item.is-tab {
+
+.navbar-item.is-tab
   border-bottom: 3px solid transparent
   min-height: 3.25rem
   padding-bottom: calc(0.5rem - 1px)
-}
 
-a.navbar-item:hover {
+
+a.navbar-item:hover
   color: $darker-color
-}
+
 
 .breadcrumb li+li::before,
-.breadcrumb li a {
+.breadcrumb li a
   color: $font-darker-color
-}
+
 
 .breadcrumb li a:hover,
-.breadcrumb li.is-active a {
+.breadcrumb li.is-active a
   color: $font-color
-}
 
-.tabs ul {
+
+.tabs ul
   border-bottom-color: $font-darker-color
-}
 
-.tabs li.is-active a {
+
+.tabs li.is-active a
   border-bottom-color: $font-color
   color: $font-color
-}
 
-.tabs a {
+
+.tabs a
   border-bottom-color: $font-darker-color
   color: $font-dark-color
-}
 
-.tabs a:hover {
+
+.tabs a:hover
   border-bottom-color: $font-color
   color: $font-color
-}
+
 
 .pagination-link,
 .pagination-next,
-.pagination-previous {
+.pagination-previous
   border-color: $font-dark-color
   color: $font-dark-color
-}
+
 
 .pagination-link.is-current,
 .pagination-link:hover,
 .pagination-next:hover,
-.pagination-previous:hover {
+.pagination-previous:hover
   background-color: transparent
   border-color: $font-color
   color: $font-color
-}
+
+
+.myChart
+  width: 2rem
+  height: 2rem

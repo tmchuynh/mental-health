@@ -1,35 +1,28 @@
-const data = {
-    labels: [
-        'Red',
-        'Blue',
-        'Yellow'
-    ],
-    datasets: [{
-        label: 'My First Dataset',
-        data: [300, 50, 100],
-        backgroundColor: [
-            'rgb(255, 99, 132)',
-            'rgb(54, 162, 235)',
-            'rgb(255, 205, 86)'
-        ],
-        hoverOffset: 4
-    }]
-};
+
 
 (function() {
+    
     const data = {
         labels: [
-            'Red',
-            'Blue',
-            'Yellow'
+            'Major Depression',
+            'Schizophrenia',
+            'Bipolar Disorder',
+            'Aniety Disorder',
+            'Postraumatic Stress Disorder',
+            'Obsessive Compulsive Disorder',
+            'Borderline Personality Disorder'
         ],
         datasets: [{
             label: 'My First Dataset',
-            data: [300, 50, 100],
+            data: [23.4, 2.6, 7.28, 49.66, 9.36, 3.12, 3.64],
             backgroundColor: [
-                'rgb(255, 99, 132)',
-                'rgb(54, 162, 235)',
-                'rgb(255, 205, 86)'
+                '#1D1A31',
+                '#B02E0C',
+                '#28536B',
+                '#DFF8EB',
+                '#B7C0EE',
+                '#ECA400',
+                '#96C9DC'
             ],
             hoverOffset: 4
         }]
@@ -38,14 +31,31 @@ const data = {
     const myChart = new Chart(
         document.getElementById('myChart'),
         config = {
-            type: "donught",
+            type: 'doughnut',
             data: data,
-            options: {}
+            options: {
+                responsive: true,
+                aspectRatio: 1,
+                layout: {
+                    padding: 50
+                },
+                plugins: {
+                    title: {
+                        display: true,
+                        text: 'ANNUAL PREVALENCE AMONG US ADULTS, BY CONDITION',
+                        font: {
+                            size: 40
+                        }
+                    },
+                    legends: {
+                        labels: {
+                            font: {
+                                size: 100
+                            }
+                        }
+                    }
+                }
+            }
         }
     )
 })();
-
-
-
-export const actions = [];
-export const config = config;
