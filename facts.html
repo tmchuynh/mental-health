@@ -87,20 +87,9 @@
 
                 <section>
                     <img src="src/assets/nami.png">
-                    <div class="graphs-container"
-                        data-title="12 MONTH PREVALENSE OF ANY MENTAL ILLNESS (ALL U.S. ADULTS)">
-                        <div
-                            class="data-container column is-full columns is-mobile is-size-7 has-text-white is-marginless">
-                            <div data-title="ALL ADULTS" data-value="21"></div>
-                            <div data-title="ASIAN ADULTS" data-value="14"></div>
-                            <div data-title="BLACK ADULTS" data-value="17"></div>
-                            <div data-title="NATIVE HAWAIIAN OR OTHER PACIDIC ISLANDER ADULTS" data-value="17"></div>
-                            <div data-title="HISPANIC OR LATIX ADULTS" data-value="18"></div>
-                            <div data-title="AMERICAN INDIAN OR ALASKA NATIVE ADULTS" data-value="19"></div>
-                            <div data-title="WHITE ADULTS" data-value="22"></div>
-                            <div data-title="ADULTS WHO REPORT MIXED/MULIRACIAL" data-value="32"></div>
-                            <div data-title="LESBIAN, GAY, AND BISECUAL ADULTS" data-value="44"></div>
-                        </div>
+                    <div class="bar-chart">
+                        <h1>12 MONTH PREVALENSE OF ANY MENTAL ILLNESS (ALL U.S. ADULTS)</h1>
+                        <canvas id="barChart" class="barChart"></canvas>
                     </div>
                 </section>
 
@@ -122,6 +111,7 @@
 
                 <section class="is-flex">
                     <div class="pie-chart">
+                        <h1 class="mt-6 pt-3">ANNUAL PREVALENCE AMONG US ADULTS<br>BY CONDITION</h1>
                         <canvas id="myChart" class="myChart"></canvas>
                     </div>
 
@@ -150,10 +140,11 @@
 
 
 
-    <script src="node_modules/bulma-graphs/graphs.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
     <script src="src/js/piechart.js"></script>
+    <script src="src/js/barChart.js"></script>
 </body>
 
 </html>

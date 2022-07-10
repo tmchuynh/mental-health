@@ -140,7 +140,7 @@ body {
 
 .statcard .delta-indicator {
   display: inline-block;
-  padding: .4em;
+  padding: 0.4em;
   font-size: 12px;
   vertical-align: middle;
 }
@@ -259,7 +259,17 @@ a.navbar-item:hover {
 }
 
 .pie-chart {
-  width: 55rem;
+  width: 60rem;
+}
+
+.pie-chart h1 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.barChart {
+  width: 100%;
 }
 
 .ripple-effect ul.title {
@@ -269,8 +279,13 @@ a.navbar-item:hover {
 }
 
 .ripple-effect ul.title li {
-  margin-top: .5rem;
+  margin-top: 0.5rem;
   color: #fff;
   font-size: 1rem;
   font-weight: normal;
+}
+
+.bar-chart h1 {
+  font-size: 2rem;
+  font-weight: bold;
 }
