@@ -257,3 +257,7 @@ a.navbar-item:hover {
 .general-facts ul li {
   color: #fff;
 }
+
+.pie-chart {
+  width: 55rem;
+}
