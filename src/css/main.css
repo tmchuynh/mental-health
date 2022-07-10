@@ -1,25 +1,3 @@
-:root {
-  --font-color: #ffa500;
-  --font-dark-color: #949ba2;
-  --font-darker-color: rgb(43, 41, 41);
-  --highlight-color: #ffa500;
-  --main-color: #252d3d;
-  --white: #fff;
-  --grey-light: #d8d8d8;
-
-  --size-5: 0.5rem --light-color: lighten(--main-color, 3%);
-  --dark-color: darken(--main-color, 3%);
-  --lighter-color: lighten(--main-color, 6%);
-  --darker-color: darken(--main-color, 6%);
-
-  --gradient-color-start: --light-color;
-  --gradient-color-end: --dark-color;
-
-  --sidebar-width: 13rem;
-  --header-height: 3.25rem;
-  --padding: 2rem;
-}
-
 html {
   overflow-y: auto;
 }
@@ -29,8 +7,8 @@ body {
 }
 
 .sidebar {
-  padding-left: calc(--padding - 0.75rem);
-  padding-right: calc(--padding - 0.75rem);
+  padding-left: calc($padding - 0.75rem);
+  padding-right: calc($padding - 0.75rem);
   position: absolute;
 }
 
@@ -40,7 +18,7 @@ body {
 
 .sidebar .menu {
   position: fixed;
-  width: calc(--sidebar-width - 2.5rem);
+  width: calc($sidebar-width - 2.5rem);
   max-width: inherit;
 }
 
@@ -119,7 +97,7 @@ body {
 .navbar-brand {
   width: 13rem;
   background-color: #ffa500;
-  margin-right: calc(--padding - 0.75rem);
+  margin-right: calc($padding - 0.75rem);
 }
 
 .navbar-brand .navbar-item {
@@ -216,7 +194,7 @@ a.navbar-item:hover {
   color: #191f2a;
 }
 
-.breadcrumb li+li::before,
+.breadcrumb li + li::before,
 .breadcrumb li a {
   color: #2b2929;
 }
@@ -259,4 +237,23 @@ a.navbar-item:hover {
   background-color: transparent;
   border-color: #ffa500;
   color: #ffa500;
+}
+
+.general-facts h1 {
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+.general-facts h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.general-facts ul {
+  color: #ffa500;
+}
+
+.general-facts ul li {
+  color: #fff;
 }

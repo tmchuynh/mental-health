@@ -27,6 +27,8 @@
             hoverOffset: 4
         }]
     };
+
+    
     
     const myChart = new Chart(
         document.getElementById('myChart'),
@@ -34,10 +36,10 @@
             type: 'doughnut',
             data: data,
             options: {
-                responsive: true,
-                aspectRatio: 1,
                 layout: {
-                    padding: 50
+                    padding: 50,
+                    width: 100,
+                    height: 100
                 },
                 plugins: {
                     title: {
@@ -58,4 +60,6 @@
             }
         }
     )
+
+    myChart.canvas.parentNode.style.height = '100px';
 })();
