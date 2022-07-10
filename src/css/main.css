@@ -14,6 +14,7 @@ body {
 
 .sidebar .category-header {
   padding: 0.5em 0.75em;
+  color: #c39c67;
 }
 
 .sidebar .menu {
@@ -96,7 +97,7 @@ body {
 
 .navbar-brand {
   width: 13rem;
-  background-color: #ffa500;
+  background-color: #c39c67;
   margin-right: calc($padding - 0.75rem);
 }
 
@@ -113,7 +114,7 @@ body {
 }
 
 .box.accent {
-  background-color: #ffa500;
+  background-color: #c39c67;
 }
 
 .box.accent .subtitle {
@@ -251,7 +252,7 @@ a.navbar-item:hover {
 }
 
 .general-facts ul {
-  color: #ffa500;
+  color: #385f37;
 }
 
 .general-facts ul li {
@@ -273,7 +274,7 @@ a.navbar-item:hover {
 }
 
 .ripple-effect ul.title {
-  color: #ffa500;
+  color: #385f37;
   font-size: 1.5rem;
   font-weight: bold;
 }
