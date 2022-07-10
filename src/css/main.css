@@ -261,3 +261,16 @@ a.navbar-item:hover {
 .pie-chart {
   width: 55rem;
 }
+
+.ripple-effect ul.title {
+  color: #ffa500;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.ripple-effect ul.title li {
+  margin-top: .5rem;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: normal;
+}
