@@ -39,6 +39,11 @@ ul li {
   color: #949ba2;
 }
 
+.sidebar .menu-list a:hover {
+  color: #c39c67;
+  background-color: #191f2a;
+}
+
 .sidebar:before {
   content: "";
   background-color: #1f2633;
@@ -192,7 +197,7 @@ ul li {
 
 .navbar-item.is-tab:hover {
   background-color: transparent;
-  border-bottom-color: #949ba2;
+  border-bottom-color: #c39c67;
 }
 
 .navbar-item.is-tab {
