@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  color: #ffa500;
+  color: #fff;
 }
 
 section {
@@ -212,7 +212,7 @@ a.navbar-item:hover {
 }
 
 .tabs ul {
-  border-bottom-color: #2b2929;
+  border-bottom-color: #949ba2;
 }
 
 .tabs li.is-active a {
@@ -221,7 +221,7 @@ a.navbar-item:hover {
 }
 
 .tabs a {
-  border-bottom-color: #2b2929;
+  border-bottom-color: #949ba2;
   color: #949ba2;
 }
 
@@ -250,9 +250,22 @@ a.navbar-item:hover {
   width: 55rem;
 }
 
+.wellness-dimensions {
+  margin-top: 3.5rem;
+  text-align: right;
+}
+
+.wellness-dimensions li {
+  margin: 1.5rem;
+}
+
+.wellness-dimensions li b {
+  color: #c39c67;
+}
+
 .wellness {
   margin-left: 5rem;
-  width: 25rem;
+  max-width: 25rem;
 }
 
 .general-facts h1 {
