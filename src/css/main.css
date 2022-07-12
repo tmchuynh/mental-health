@@ -246,6 +246,15 @@ a.navbar-item:hover {
   color: #ffa500;
 }
 
+.health-care {
+  width: 55rem;
+}
+
+.wellness {
+  margin-left: 5rem;
+  width: 25rem;
+}
+
 .general-facts h1 {
   font-size: 1.75rem;
   font-weight: bold;
