@@ -4,6 +4,7 @@ html {
 
 body {
   color: #fff;
+  margin-left: 15rem;
 }
 
 section {
@@ -37,7 +38,7 @@ section {
 .sidebar:before {
   content: "";
   background-color: #1f2633;
-  width: 13rem;
+  width: 15rem;
   position: fixed;
 }
 
@@ -49,7 +50,6 @@ section {
 }
 
 .main {
-  margin-left: 13rem;
   position: relative;
   padding-left: 2rem;
   padding-right: 2rem;
@@ -101,7 +101,7 @@ section {
 }
 
 .navbar-brand {
-  width: 13rem;
+  width: 15rem;
   background-color: #c39c67;
   margin-right: calc($padding - 0.75rem);
 }
@@ -319,6 +319,14 @@ a.navbar-item:hover {
   font-weight: bold;
 }
 
+footer {
+  padding: 1rem;
+}
+
 footer h2 {
   color: #ffa500;
+}
+
+footer hr {
+  width: 100%;
 }
