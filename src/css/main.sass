@@ -1,6 +1,6 @@
-$font-color: #ffa500
+$font-color: #fff
 $font-dark-color: #949ba2
-$font-darker-color: rgb(43, 41, 41)
+$font-lighter-color: #ffa500
 $highlight-color: #c39c67
 $main-color: #252d3d
 $sub-color: #385f37
@@ -175,7 +175,7 @@ section
 .content h6,
 .title,
 .tile
-    color: $font-color
+    color: $font-lighter-color
 
 .subtitle
     color: $font-dark-color
@@ -202,19 +202,19 @@ a.navbar-item:hover
     color: $tri-color
 
 .tabs ul
-    border-bottom-color: $font-darker-color
+    border-bottom-color: $font-dark-color
 
 .tabs li.is-active a
-    border-bottom-color: $font-color
-    color: $font-color
+    border-bottom-color: $font-lighter-color
+    color: $font-lighter-color
 
 .tabs a
-    border-bottom-color: $font-darker-color
+    border-bottom-color: $font-dark-color
     color: $font-dark-color
 
 .tabs a:hover
-    border-bottom-color: $font-color
-    color: $font-color
+    border-bottom-color: $font-lighter-color
+    color: $font-lighter-color
 
 .pagination-link,
 .pagination-next,
@@ -227,15 +227,23 @@ a.navbar-item:hover
 .pagination-next:hover,
 .pagination-previous:hover
     background-color: transparent
-    border-color: $font-color
-    color: $font-color
+    border-color: $font-lighter-color
+    color: $font-lighter-color
 
 .health-care
     width: 55rem
 
+.wellness-dimensions
+    margin-top: 3.5rem
+    text-align: right
+    li
+        margin: 1.5rem
+        b
+            color: $tri-color
+
 .wellness
     margin-left: 5rem
-    width: 25rem
+    max-width: 25rem
 
 .general-facts
     h1
@@ -278,3 +286,4 @@ a.navbar-item:hover
 .bar-chart h1
     font-size: 2rem
     font-weight: bold
+
